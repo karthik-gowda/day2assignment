@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Page</title>
+</head>
+
+<body>
+    <h1 class="display-4 m-2">Add a new Product</h1>
+    <form action="/postproduct" method="POST" class="w-50 bg-light m-2">
+        <div class="form-group m-2">
+            <label for="id">ID:</label>
+            <input id="id" class="form-control" type="number" name="id" />
+        </div>
+        <div class="form-group m-2">
+            <label for="title">Title: </label>
+            <input id="title" class="form-control" type="text" name="title" />
+        </div>
+        <div class="form-group m-2">
+            <label for="price">Price: </label>
+            <input id="price" class="form-control" type="text" name="price" />
+        </div>
+        <div class="form-group m-2">
+            <label for="desc">Description: </label>
+            <textarea id="desc" class="form-control" name="desc" id="desc" cols="10" rows="3"></textarea>
+        </div>
+        <div class="form-group m-2">
+            <label for="category">Category: </label>
+            <input id="category" class="form-control" type="text" name="category" />
+        </div>
+        <div class="form-group m-2">
+            <label for="image">Image Link: </label>
+            <input id="image" class="form-control" type="text" name="image" />
+        </div>
+        <div class="form-group m-2">
+            <label for="rate">Rate: </label>
+            <input id="rate" class="form-control" type="text" name="rate" />
+        </div>
+        <div class="form-group m-2">
+            <label for="count">Count: </label>
+            <input id="count" class="form-control" type="number" name="count" />
+        </div>
+        <div class="form-group m-2">
+            <input class="btn btn-primary" type="submit" value="Submit" />
+        </div>
+    </form>
+</body>
+
+</html>

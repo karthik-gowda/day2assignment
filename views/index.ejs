@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="display-3 m-2">Products</h1>
+    <table class="table table-striped m-2">
+        <thead>
+            <tr class="bg-dark text-white">
+                <th>Id</th>
+                <th>Title</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Category</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% data.forEach((item)=>{ %>
+                <tr>
+                    <td>
+                        <%= item.id%>
+                    </td>
+                    <td>
+                        <%= item.title%>
+                    </td>
+                    <td>
+                        <%= item.price%>
+                    </td>
+                    <td>
+                        <%= item.description%>
+                    </td>
+                    <td>
+                        <%= item.category%>
+                    </td>
+                </tr>
+                <%});%>
+        </tbody>
+    </table>
+</body>
+
+</html>
