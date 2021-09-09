@@ -79,12 +79,8 @@ products.post('/postproduct', async(req, res) => {
         "title": req.body.title,
         "price": parseFloat(req.body.price),
         "description": req.body.desc,
-        "category": req.body.category,
-        "image": req.body.image,
-        "rating": {
-            "rate": parseFloat(req.body.rate),
-            "count": parseInt(req.body.count)
-        }
+        "category": req.body.category
+
     }
 
     try {
